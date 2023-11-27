@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">Game Center</string>
+
+    <!-- Template -->
+    <string name="games_name">Games Name</string>
+    <string name="games_genre">Games Genre</string>
+    <string name="games_price">Games Price</string>
+
+    <!-- Button and sample -->
+    <string name="button_buy_now">Buy now</string>
+    <string name="button_edit_profile">Edit Profile</string>
+    <string name="sample_my_profile">My Profile</string>
+    <string name="sample_games">Games</string>
+    <string name="sample_friends">Friends</string>
+    <string name="sample_wallet">Wallet</string>
+    <string name="sample_language">Language</string>
+    <string name="sample_favourites">Favourites</string>
+    <string name="sample_about_game">About Game</string>
+    <string name="sample_your_games">Your Games</string>
+    <string name="sample_cart">Cart</string>
+    <string name="sample_balance_wallet">Balance Wallet</string>
+    <string name="sample_log_out">Log Out</string>
+    <string name="sample_downloads">Downloads</string>
+    <string name="sample_adult">Adult</string>
+    <string name="sample_reviews">Reviews</string>
+    <string name="sample_about_game_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad distinctio ea et ipsum itaque iure maxime nam nihil odio pariatur, quam quia quo rem repellendus rerum similique sunt temporibus vero!</string>
+
+    <!-- User Ptofile -->
+    <string name="user_full_name">Dwi Azi Prasetya</string>
+    <string name="user_name">Wizi</string>
+    <string name="user_email">dwiaziprasetya456@gmail.com</string>
+    <string name="user_games">145</string>
+    <string name="user_friends">3K</string>
+    <string name="user_wallet">Rp 2 458 090</string>
+
+
+    <!-- Games Data -->
+    <string-array name="data_game">
+        <item>Apex Legends</item>
+        <item>COD Modern Warfare 2</item>
+        <item>Day Z</item>
+        <item>EA Sport FC 24</item>
+        <item>Red Dead Redemption 2</item>
+        <item>Resident Evil 2</item>
+        <item>Resident Evil 7</item>
+        <item>eFootball™ 2024</item>
+        <item>Stardew Valley</item>
+        <item>PUBG: BATTLEGROUNDS</item>
+    </string-array>
+
+    <string-array name="data_downloads">
+        <item>10M+</item>
+        <item>4M+</item>
+        <item>3M+</item>
+        <item>9M+</item>
+        <item>3M+</item>
+        <item>5M+</item>
+        <item>2M+</item>
+        <item>4M+</item>
+        <item>5M+</item>
+        <item>3M+</item>
+    </string-array>
+
+    <string-array name="data_rating_age">
+        <item>18+</item>
+        <item>17+</item>
+        <item>13+</item>
+        <item>14+</item>
+        <item>18+</item>
+        <item>10+</item>
+        <item>15+</item>
+        <item>10+</item>
+        <item>14+</item>
+        <item>12+</item>
+    </string-array>
+
+    <string-array name="data_reviews">
+        <item>3M+</item>
+        <item>2M+</item>
+        <item>4M+</item>
+        <item>3M+</item>
+        <item>4M+</item>
+        <item>2M+</item>
+        <item>1M+</item>
+        <item>2M+</item>
+        <item>5M+</item>
+        <item>3M+</item>
+    </string-array>
+
+    <string-array name="data_genre">
+        <item>Battle Royale,FPS,Survival</item>
+        <item>Action,Capitalism,FPS</item>
+        <item>Survival,Zombies,Action</item>
+        <item>Football,Sports,Simulation</item>
+        <item>Open World,Adventure,Western</item>
+        <item>Zombies,Horror,Shooter</item>
+        <item>Zombies,First-Person,Gore</item>
+        <item>Football,Sports,Multiplayer</item>
+        <item>Farming Sim,Pixel,Multiplayer</item>
+        <item>Survival,Shooter,Battle Royale</item>
+    </string-array>
+
+    <string-array name="data_price">
+        <item>Free to Play</item>
+        <item>$ 50.35</item>
+        <item>$ 23.23</item>
+        <item>$ 64.43</item>
+        <item>$ 34.66</item>
+        <item>$ 23.57</item>
+        <item>$ 20.89</item>
+        <item>Free to Play</item>
+        <item>$ 20.17</item>
+        <item>Free to Play</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Apex Legends is the award-winning, free-to-play Hero Shooter from Respawn Entertainment. Master an ever-growing roster of legendary characters with powerful abilities, and experience strategic squad play and innovative gameplay in the next evolution of Hero Shooter and Battle Royale.</item>
+        <item>Call of Duty®: Modern Warfare® II drops players into an unprecedented global conflict that features the return of the iconic Operators of Task Force 141.</item>
+        <item>How long can you survive a post-apocalyptic world? A land overrun with an infected "zombie" population, where you compete with other survivors for limited resources. Will you team up with strangers and stay strong together? Or play as a lone wolf to avoid betrayal? This is DayZ – this is your story.</item>
+        <item>EA SPORTS FC™ 24 welcomes you to The World’s Game: the most true-to-football experience ever with HyperMotionV, PlayStyles optimised by Opta, and an enhanced Frostbite™ Engine.</item>
+        <item>Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age. Also includes access to the shared living world of Red Dead Online.</item>
+        <item>A deadly virus engulfs the residents of Raccoon City in September of 1998, plunging the city into chaos as flesh eating zombies roam the streets for survivors. An unparalleled adrenaline rush, gripping storyline, and unimaginable horrors await you. Witness the return of Resident Evil 2.</item>
+        <item>Fear and isolation seep through the walls of an abandoned southern farmhouse. "7" marks a new beginning for survival horror with the “Isolated View” of the visceral new first-person perspective.</item>
+        <item>The classic action soccer game with the most up-to-date data! Enjoy the fever pitch of ""real soccer"" in eFootball™ 2024!</item>
+        <item>You\'ve inherited your grandfather\'s old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home?</item>
+        <item>Play PUBG: BATTLEGROUNDS for free. Land on strategic locations, loot weapons and supplies, and survive to become the last team standing across various, diverse Battlegrounds. Squad up and join the Battlegrounds for the original Battle Royale experience that only PUBG: BATTLEGROUNDS</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/cover_apex_legends</item>
+        <item>@drawable/cover_cod_mw_2</item>
+        <item>@drawable/cover_day_z</item>
+        <item>@drawable/cover_fc_24</item>
+        <item>@drawable/cover_red_dead_redemption_2</item>
+        <item>@drawable/cover_resident_evil_2</item>
+        <item>@drawable/cover_resident_evil_biohazard</item>
+        <item>@drawable/cover_efootball</item>
+        <item>@drawable/cover_stardew_valley</item>
+        <item>@drawable/cover_pubg</item>
+    </integer-array>
+
+    <integer-array name="data_detail_photo">
+        <item>@drawable/detail_apex_legends</item>
+        <item>@drawable/detail_cod_mw_2</item>
+        <item>@drawable/detail_day_z</item>
+        <item>@drawable/detail_fc_24</item>
+        <item>@drawable/detail_red_redemption_2</item>
+        <item>@drawable/detail_resident_evil_2</item>
+        <item>@drawable/detail_resident_evil_biohazard</item>
+        <item>@drawable/detail_efootball</item>
+        <item>@drawable/detail_stardew_valley</item>
+        <item>@drawable/detail_pubg</item>
+    </integer-array>
+
+</resources>

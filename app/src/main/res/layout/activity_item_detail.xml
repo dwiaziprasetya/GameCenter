@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ItemDetailActivity"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_detail_item_photo"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/gradient_background"
+            app:layout_constraintBottom_toBottomOf="@+id/img_detail_item_photo"
+            app:layout_constraintEnd_toEndOf="@+id/img_detail_item_photo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/img_detail_item_photo"
+            app:layout_constraintTop_toTopOf="@+id/img_detail_item_photo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_detail_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/spacegroteskbold"
+            android:text="@string/games_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/img_detail_item_photo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_detail_item_photo"
+            app:layout_constraintVertical_bias="0.87" />
+
+        <TextView
+            android:id="@+id/tv_detail_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:text="@string/games_price"
+            android:textColor="#FFD93D"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_detail_item_genre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_detail_item_name"
+            app:layout_constraintTop_toTopOf="@+id/tv_detail_item_name"
+            app:layout_constraintVertical_bias="0.71000004" />
+
+        <TextView
+            android:id="@+id/tv_detail_item_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="28dp"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:text="@string/games_genre"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_detail_item_photo"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_item_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_item_name"/>
+
+        <TextView
+            android:id="@+id/tv_deve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/spacegroteskbold"
+            android:text="@string/sample_about_game"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_item_genre"
+            app:layout_constraintTop_toBottomOf="@+id/tv_downloads_sample" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
+            android:text="@string/sample_about_game_description"
+            android:textColor="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_deve"
+            app:layout_constraintTop_toBottomOf="@+id/tv_deve" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintBottom_toTopOf="@+id/tv_detail_item_name"
+            app:layout_constraintEnd_toEndOf="@+id/img_detail_item_photo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/btn_share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/baseline_share_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/btn_back"
+            app:layout_constraintTop_toTopOf="@+id/btn_back"/>
+
+        <TextView
+            android:fontFamily="@font/spacegroteskmedium"
+            android:id="@+id/tv_downloads"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp"
+            android:text="@string/sample_downloads"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_item_genre"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_item_genre"/>
+
+        <TextView
+            android:id="@+id/tv_rating_age"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:text="@string/sample_adult"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_downloads"
+            app:layout_constraintStart_toEndOf="@+id/tv_downloads"
+            app:layout_constraintTop_toTopOf="@+id/tv_downloads"/>
+
+        <TextView
+            android:id="@+id/tv_reviews"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/sample_reviews"
+            android:gravity="center|end"
+            android:paddingStart="90dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/tv_rating_age"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_rating_age"
+            app:layout_constraintTop_toTopOf="@+id/tv_rating_age"/>
+
+        <TextView
+            android:id="@+id/tv_downloads_sample"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:text="@string/sample_downloads"
+            android:textColor="@color/grey"
+            app:layout_constraintStart_toStartOf="@+id/tv_downloads"
+            app:layout_constraintTop_toBottomOf="@+id/tv_downloads"/>
+
+        <TextView
+            android:id="@+id/tv_rating_age_sample"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:text="@string/sample_adult"
+            android:gravity="center_horizontal"
+            android:textColor="@color/grey"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_downloads_sample"
+            app:layout_constraintStart_toEndOf="@+id/tv_downloads_sample"
+            app:layout_constraintTop_toTopOf="@+id/tv_downloads_sample"/>
+
+        <TextView
+            android:id="@+id/tv_reviews_sample"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/sample_reviews"
+            android:gravity="center|end"
+            android:paddingStart="70dp"
+            android:textColor="@color/grey"
+            app:layout_constraintBottom_toBottomOf="@id/tv_rating_age_sample"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_rating_age_sample"
+            app:layout_constraintTop_toTopOf="@+id/tv_rating_age_sample"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_btn_buynow"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24_white"
+            android:fontFamily="@font/motivasanstestbold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/button_buy_now"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_img_add_to_cart"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_weight="6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/btn_img_add_to_cart"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/round_btn_add_to_cart"
+            android:src="@drawable/baseline_shopping_cart_24"
+            app:layout_constraintBottom_toBottomOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="4"
+            app:layout_constraintWidth_percent="0.25" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

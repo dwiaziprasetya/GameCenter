@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/viewoi"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spacegroteskbold"
+            android:text="@string/sample_my_profile"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_back_about"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+            app:layout_constraintStart_toEndOf="@+id/btn_back_about"
+            app:layout_constraintTop_toTopOf="@+id/btn_back_about" />
+
+        <ImageButton
+            android:id="@+id/btn_back_about"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_arrow_back_24_black"
+            app:layout_constraintBottom_toBottomOf="@+id/viewoi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewoi" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_settings_24"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/viewoi"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ci_profile_image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/image_user_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewoi" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/spacegroteskbold"
+            android:text="@string/user_full_name"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ci_profile_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ci_profile_image"
+            app:layout_constraintTop_toTopOf="@+id/ci_profile_image"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:text="@string/user_email"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButton"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:background="@drawable/round_btn_buynow"
+            android:fontFamily="@font/motivasanstestmedium"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="@string/button_edit_profile"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ci_profile_image"
+            app:layout_constraintStart_toStartOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:text="@string/user_games"
+            app:layout_constraintStart_toStartOf="@+id/ci_profile_image"
+            app:layout_constraintTop_toBottomOf="@+id/ci_profile_image" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:text="@string/user_friends"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:text="@string/user_wallet"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:text="@string/sample_games"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:text="@string/sample_friends"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/textView8" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:text="@string/sample_wallet"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+            app:layout_constraintStart_toEndOf="@+id/textView9" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/baseline_language_24"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:gravity="start|center_vertical|end"
+            android:text="@string/sample_language"
+            android:drawablePadding="16dp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/baseline_favorite_border_24"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:gravity="start|center_vertical|end"
+            android:text="@string/sample_favourites"
+            android:drawablePadding="16dp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatButton2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/baseline_games_24"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:gravity="start|center_vertical|end"
+            android:text="@string/sample_your_games"
+            android:drawablePadding="16dp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatButton3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/baseline_shopping_cart_24_black"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:gravity="start|center_vertical|end"
+            android:text="@string/sample_cart"
+            android:drawablePadding="16dp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatButton4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/baseline_account_balance_wallet_24"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:gravity="start|center_vertical|end"
+            android:text="@string/sample_balance_wallet"
+            android:drawablePadding="16dp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatButton5" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/baseline_your_friends_24"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:gravity="start|center_vertical|end"
+            android:text="@string/sample_friends"
+            android:drawablePadding="16dp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatButton6" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatButton7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_log_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/baseline_logout_24"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:gravity="start|center_vertical|end"
+            android:text="@string/sample_log_out"
+            android:drawablePadding="16dp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

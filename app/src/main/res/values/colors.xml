@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="my_light_primary">#E91E63</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#A9A9A9</color>
+    <color name="btnLight">#473FFF</color>
+    <color name="btnDarkTheme">#E7B10A</color>
+</resources>
